@@ -1,0 +1,416 @@
+@font-face {
+    font-family: machina;
+    src: url("../NeueMachina-Regular_DQCmjH1st.ttf");
+}
+
+@font-face {
+    font-family: lightmachina;
+    src: url("../NeueMachina-Light_gwWCZxVuQl.ttf");
+}
+
+@font-face {
+    font-family: juana;
+    src: url("../Fontspring-DEMO-juana-extralightit_toKzXEsfr.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: url(./bgimage.svg);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 70px;
+    font-family: machina;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.logo h1 {
+    font-family: machina;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.logo img {
+    width: 35px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+ul button {
+    padding: 8px 22px;
+    background: #24cfa6;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+ul button:hover {
+    background: #2edfb5;
+}
+
+.cohort {
+    font-weight: 600;
+    font-size: 16px;
+    color: #be524b;
+}
+
+.navphone {
+    display: none;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.menubar {
+    position: absolute;
+    display: none;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menuicon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.menuicon h2 {
+    font-weight: 100;
+}
+
+.line {
+    background: gray;
+    height: 1px;
+}
+
+.navmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+.kodr {
+    color: #be524b;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding: 20px 50px;
+        font-family: machina;
+    }
+
+    ul {
+        gap: 45px;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .logo h1 {
+        font-family: machina;
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    ul button {
+        padding: 8px 22px;
+        background: #24cfa6;
+        border: none;
+        border-radius: 5px;
+        font-size: 12 px;
+    }
+}
+
+@media (max-width: 900px) {
+    ul {
+        display: none;
+    }
+
+    nav {
+        padding: 15px 30px;
+    }
+
+    .logo img {
+        width: 26px;
+    }
+
+    .logo h1 {
+        font-size: 13px;
+    }
+
+    .navphone {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 15px 20px;
+    }
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+    padding: 15px 70px;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-family: lightmachina;
+    font-weight: 100;
+    font-size: 5vw;
+    text-align: center;
+    line-height: 0.9;
+    position: relative;
+}
+
+.hero h1 .teach {
+    color: #24cfa6;
+
+}
+
+.hero h1 .good {
+    font-family: juana;
+}
+
+.hero button {
+    margin-top: 50px;
+    background-color: #24cfa6;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.side-text {
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 15vw;
+    top: 25vw;
+    font-size: 12px;
+    font-family: machina;
+
+}
+
+.br-2 {
+    display: block;
+}
+
+.br-3 {
+    display: none;
+}
+
+.br-1 {
+    display: none;
+}
+
+.side-text span {
+    color: #24cfa6;
+}
+
+@media (max-width:1400px) {
+    .side-text {
+        position: absolute;
+        right: 10vw;
+        top: 30vw;
+    }
+}
+
+@media (max-width:1026px) {
+    .hero h1 {
+        font-size: 8vw;
+    }
+
+    .hero {
+        padding: 15px 10px;
+        margin-top: 30%;
+    }
+
+    .side-text {
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
+    .hero h1 {
+        font-size: 12vw;
+        text-wrap: wrap;
+    }
+
+    .hero {
+        padding: 15px 10px;
+        margin-top: 40%;
+    }
+
+    .hero button {
+        font-size: 15px;
+    }
+
+    .side-text {
+        display: none;
+    }
+
+    .br-2 {
+        display: none;
+    }
+
+    .br-3 {
+        display: block;
+    }
+
+    .br-1 {
+        display: block;
+    }
+}
+
+.sec-2 {
+    margin-top: 100px;
+    padding: 15px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutsec {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: machina;
+    font-size: 1.5vw;
+}
+
+.aboutsec p {
+    font-size: 1.2vw;
+}
+
+.tag-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    text-align: center;
+    font-family: lightmachina;
+    font-size: 18px;
+}
+
+.tag-text span {
+    color: #24cfa6;
+}
+
+.videosec {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.video {
+    width: 65%;
+    height: 60vh;
+    background-color: #545252;
+    border-radius: 20px;
+}
+
+.videosec button {
+    margin-top: 50px;
+    background-color: #24cfa6;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+@media (max-width:1024px) {
+    .aboutsec {
+        font-size: 2vw;
+    }
+
+    .tag-text {
+        font-size: 2vw;
+    }
+
+    .video {
+        width: 70%;
+        height: 45vh;
+    }
+
+    .sec-2 {
+        padding: 15px 10px;
+        margin-top: 50px;
+    }
+
+    .tag-text {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:800px) {
+    .video {
+        width: 80%;
+        height: 40vh;
+    }
+
+    .videosec button{
+        font-size: 15px;
+    }
+}
